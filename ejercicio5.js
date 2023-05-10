@@ -19,17 +19,21 @@ const startCalc = () => {
   //seleccionar elementos del DOM
   const inputNum1 = parseInt(document.querySelector("#num1").value);
   const inputNum2 = parseInt(document.querySelector("#num2").value);
-  if (operatorSelected.value === "+") {
-    inputResult.value = inputNum1 + inputNum2;
-    console.log(operatorSelected.value);
-  } else if (operatorSelected.value === "-") {
-    inputResult.value = inputNum1 - inputNum2;
-  } else if (operatorSelected.value === "*") {
-    inputResult.value = inputNum1 * inputNum2;
-  } else if (operatorSelected.value === "/") {
-    inputResult.value = inputNum1 / inputNum2;
+  if (isNaN(inputNum1) || isNaN(inputNum2)) {
+    alert("Debe escribir un número válido.");
   } else {
-    alert("Debe seleccionar un operador");
+    if (operatorSelected.value === "+") {
+      inputResult.value = inputNum1 + inputNum2;
+      console.log(operatorSelected.value);
+    } else if (operatorSelected.value === "-") {
+      inputResult.value = inputNum1 - inputNum2;
+    } else if (operatorSelected.value === "*") {
+      inputResult.value = inputNum1 * inputNum2;
+    } else if (operatorSelected.value === "/") {
+      inputResult.value = inputNum1 / inputNum2;
+    } else {
+      alert("Debe seleccionar un operador");
+    }
   }
 };
 
