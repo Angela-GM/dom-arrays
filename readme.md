@@ -50,20 +50,6 @@ boton.onclick= (e) =>{...}
 ```js
 boton.addEventListener('click', ()=>{...}, false);
 ```
-### Cambiando estilos
-Podemos modificar los estilos de un elemento usando Javascript
-
-Existen dos aproximaciones:
-
-- Acceder a las propiedades de estilo mediante **style**
-```js
-Node.style.[color|height|width|border...]=<valor>;
-```
-- Modificar la **clase del estilo** (opción preferida)
-```js
-Node.className=<class_list>;
-let elementClasses= Node.classList.[add()|remove()|contains()];
-```
 </details>
 
 

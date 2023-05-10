@@ -1,0 +1,132 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos Modo lectura */
+.lectura {
+  background: #333;
+  color: whitesmoke;
+  & img {
+    display: none;
+  }
+}
+
+/* HEADER  */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  & h1 {
+    margin-bottom: 2rem;
+  }
+  & button {
+    margin: 0 0.7rem;
+  }
+}
+
+section {
+  width: 90%;
+  padding: 2rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & p {
+    margin-bottom: 1rem;
+  }
+}
+
+button {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 1rem 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: crimson;
+  border: 1px solid white;
+}
+
+/* Ejercicio 2 */
+.list-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-ej {
+  margin-top: 2rem;
+}
+
+/* Ejercicio 3 */
+#item-random {
+  background-color: crimson;
+  color: aliceblue;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem 0;
+}
+
+/* Ejercicio 4 */
+#form-bcn,
+#form-calculadora {
+  width: 100vw;
+  /* margin: auto; */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #333;
+
+  & input,
+  select {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+}
+
+#form-calculadora {
+  background-color: crimson;
+  & p {
+    color: aliceblue;
+    font-size: 3rem;
+  }
+  & input,
+  select {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #form-bcn,
+  #form-calculadora {
+    flex-direction: row;
+  }
+}
