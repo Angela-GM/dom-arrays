@@ -1,0 +1,9 @@
+/* * Ejercicio 7 Rocket */
+#rocket {
+  width: 225px;
+  height: 225px;
+  z-index: 20;
+  left: 50%;
+  bottom: 0%;
+  position: absolute;
+}

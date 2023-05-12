@@ -6,8 +6,8 @@
 // Iteración 2:
 // Añadir el evento onclick al botón de 'Calcular'
 //seleccionar elementos del DOM
-const inputNum1 = parseInt(document.querySelector("#num1").value);
-const inputNum2 = parseInt(document.querySelector("#num2").value);
+// const inputNum1 = parseInt(document.querySelector("#num1").value);
+// const inputNum2 = parseInt(document.querySelector("#num2").value);
 const operatorSelected = document.querySelector("#operator");
 const inputResult = document.querySelector("#result");
 const btnCalcular = document.querySelector("button");

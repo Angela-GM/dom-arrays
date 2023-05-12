@@ -130,6 +130,14 @@ button:hover {
   background-color: cadetblue;
 }
 
+/* Ejercicio 6 */
+.ejercicio6 {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
